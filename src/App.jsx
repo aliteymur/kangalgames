@@ -186,7 +186,7 @@ export default function App() {
               <span className="eyebrow">Playable demo</span>
               <h2 className="section-title">Feel it, don’t just read it.</h2>
               <p className="section-lead">
-                A tiny browser tech demo — no download, no sign-up. Guard the
+                A tiny browser tech demo: no download, no sign-up. Guard the
                 moonlit steppe as the Kangal and hold back the wolves. It’s a
                 small taste of the game feel we obsess over.
               </p>
