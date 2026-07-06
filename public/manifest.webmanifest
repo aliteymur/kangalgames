@@ -1,0 +1,16 @@
+{
+  "name": "Kangal: Night Watch",
+  "short_name": "Kangal Watch",
+  "description": "Guard the moonlit steppe as the Kangal — a demo by Kangal Games.",
+  "start_url": "./game.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0b0b0d",
+  "theme_color": "#0b0b0d",
+  "icons": [
+    { "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

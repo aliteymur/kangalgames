@@ -1,0 +1,8 @@
+{
+  "appId": "com.kangalgames.nightwatch",
+  "appName": "Kangal Night Watch",
+  "webDir": "dist",
+  "backgroundColor": "#0b0b0d",
+  "android": { "backgroundColor": "#0b0b0d" },
+  "ios": { "backgroundColor": "#0b0b0d", "contentInset": "always" }
+}

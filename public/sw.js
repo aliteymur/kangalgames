@@ -1,0 +1,33 @@
+/* Minimal offline cache for Kangal: Night Watch (PWA).
+   Cache-first for same-origin GET; network fallback. Bump CACHE on release. */
+const CACHE = 'kangal-watch-v1'
+const CORE = ['./', './game.html', './index.html', './favicon.svg', './manifest.webmanifest']
+
+self.addEventListener('install', (e) => {
+  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(CORE)).catch(() => {}))
+  self.skipWaiting()
+})
+
+self.addEventListener('activate', (e) => {
+  e.waitUntil(
+    caches.keys().then((keys) => Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k))))
+  )
+  self.clients.claim()
+})
+
+self.addEventListener('fetch', (e) => {
+  const req = e.request
+  if (req.method !== 'GET' || new URL(req.url).origin !== location.origin) return
+  e.respondWith(
+    caches.match(req).then((hit) => {
+      if (hit) return hit
+      return fetch(req)
+        .then((res) => {
+          const copy = res.clone()
+          caches.open(CACHE).then((c) => c.put(req, copy)).catch(() => {})
+          return res
+        })
+        .catch(() => caches.match('./game.html'))
+    })
+  )
+})

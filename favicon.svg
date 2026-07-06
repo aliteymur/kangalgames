@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="64" height="64">
+  <defs>
+    <linearGradient id="f" x1="120" y1="30" x2="120" y2="215" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e7c48d"/><stop offset="0.55" stop-color="#c99a5b"/><stop offset="1" stop-color="#9c6f3c"/>
+    </linearGradient>
+    <linearGradient id="e" x1="120" y1="40" x2="120" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7c5630"/><stop offset="1" stop-color="#4f3921"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="52" fill="#0b0b0d"/>
+  <path d="M78 70 C52 66 40 92 46 128 C52 158 74 168 90 150 C82 118 84 88 78 70 Z" fill="url(#e)"/>
+  <path d="M162 70 C188 66 200 92 194 128 C188 158 166 168 150 150 C158 118 156 88 162 70 Z" fill="url(#e)"/>
+  <path d="M120 34 C158 34 176 58 180 92 C183 118 178 138 168 156 C160 172 150 184 138 196 C132 202 126 206 120 206 C114 206 108 202 102 196 C90 184 80 172 72 156 C62 138 57 118 60 92 C64 58 82 34 120 34 Z" fill="url(#f)"/>
+  <ellipse cx="98" cy="120" rx="8" ry="7" fill="#2a1c11"/>
+  <ellipse cx="142" cy="120" rx="8" ry="7" fill="#2a1c11"/>
+  <circle cx="98" cy="119" r="5" fill="#e8a23d"/>
+  <circle cx="142" cy="119" r="5" fill="#e8a23d"/>
+  <path d="M120 128 C104 128 92 140 90 158 C88 176 100 194 120 200 C140 194 152 176 150 158 C148 140 136 128 120 128 Z" fill="#241812"/>
+  <path d="M120 150 C112 150 106 156 106 162 C106 169 113 174 120 174 C127 174 134 169 134 162 C134 156 128 150 120 150 Z" fill="#0e0a08"/>
+</svg>
