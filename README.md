@@ -1,8 +1,4 @@
-<p align="center">
-  <img src="public/logo.png" alt="Kangal Games" width="480">
-</p>
-
-# Kangal Games — Website
+# 🐺 Kangal Games — Website
 
 The official website for **Kangal Games**, an independent game studio building
 bold, high-craft games — mobile-first, with AA and (one day) AAA ambitions.
@@ -19,10 +15,8 @@ Built with **React + Vite (JavaScript)** in a modern, cinematic dark style.
 - **Honest content** — no invented games. A studio intro, a "what we make"
   ladder (Mobile → AA → AAA), a real roadmap, values, and a contact CTA.
 - **Fully responsive** — sticky glass navbar with a mobile menu.
-- **Official brand mark** — the real Kangal Games logo (dog-head emblem +
-  wordmark) is used across the site, favicon, and app icons. A vector SVG
-  fallback emblem is also included in `Logo.jsx` for places a raster mark
-  isn't ideal.
+- **Vector brand mark** — a clean SVG Kangal emblem + wordmark (no image assets
+  required). Easy to swap for your official logo.
 - **Playable demo — _Kangal: Night Watch_** — a modern vector-art canvas action
   game embedded in the site (Demo section) and available fullscreen at
   `game.html`. Guard the moonlit steppe: move (WASD / arrows / touch joystick),
@@ -32,18 +26,18 @@ Built with **React + Vite (JavaScript)** in a modern, cinematic dark style.
   iOS/Android) and pre-wired with **Capacitor** for native `.apk` / `.ipa`
   builds. See **[MOBILE.md](MOBILE.md)**.
 
-## 🖼️ Brand logo
+## 🖼️ Using your own logo
 
-The official Kangal Games logo (`logo.png` in `public/`) is the studio's
-proprietary artwork and is used site-wide — hero, nav, favicon, and the
-generated PWA/app icons in `public/icons/` (192, 512, maskable, Apple touch).
+The hero and nav use a built-in vector emblem so the site looks complete out of
+the box. To use your official logo art instead:
 
-A vector `KangalEmblem` fallback still lives in `src/Logo.jsx` for contexts
-where a lightweight SVG mark is preferable, but it should stay visually
-consistent with the official logo rather than be treated as a separate brand.
-
-**Note:** this logo and all related artwork are © Kangal Games — see
-[License & rights](#-license--rights) below before reusing or redistributing.
+1. Drop your file into `public/` as `logo.png` (or `logo.svg`).
+2. In `src/App.jsx`, find the hero `<KangalEmblem size={340} />` and replace it
+   with:
+   ```jsx
+   <img src="/logo.png" alt="Kangal Games" style={{ maxWidth: '100%' }} />
+   ```
+3. (Optional) Do the same in the nav `LogoLockup` if you want the raster mark there too.
 
 ## 🗂️ Project structure
 
@@ -57,7 +51,7 @@ public/
   manifest.webmanifest  PWA install metadata
   sw.js                 Service worker (offline cache)
   icons/                Generated app icons (192/512/maskable/apple)
-  logo.png              Official Kangal Games logo (© all rights reserved)
+  (drop your logo.png here)
 src/
   main.jsx            Site entry (+ native redirect to the game)
   game-main.jsx       Standalone game entry
@@ -86,23 +80,6 @@ Requires [Node.js](https://nodejs.org) 18+.
 - [Vite 5](https://vitejs.dev)
 - Plain JavaScript, inline SVG, CSS (no UI framework)
 
-## © License & rights
-
-This repository contains the source code for the Kangal Games marketing site
-and demo game. Unless otherwise noted:
-
-- **Code** in this repository is provided for internal use by Kangal Games and
-  its collaborators only. No open-source license is granted.
-- **All logos, brand marks, artwork, game assets, character art, audio, and
-  visual design** (including but not limited to the Kangal Games emblem,
-  wordmark, app icons, and the *Kangal: Night Watch* game art) are the
-  exclusive property of Kangal Games. **All rights reserved.**
-- None of the above may be copied, reproduced, modified, distributed, or used
-  in other projects — commercial or non-commercial — without prior written
-  permission from Kangal Games.
-
-For permissions or licensing inquiries, please contact Kangal Games directly.
-
 ---
 
-© Kangal Games. All rights reserved. — Loyal to the craft, fearless in the making.
+© Kangal Games — Loyal to the craft, fearless in the making.
