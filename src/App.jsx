@@ -19,7 +19,7 @@ const FOCUS = [
   {
     icon: <StarIcon />,
     title: 'AAA Worlds',
-    desc: 'The long game. As the pack grows, so does our scope — original worlds built to stand beside the greats.',
+    desc: 'The long game. As the pack grows, so does our scope. Original worlds built to stand beside the greats.',
     stage: ['Future vision', 'future'],
   },
 ]
@@ -27,12 +27,12 @@ const FOCUS = [
 const VALUES = [
   { icon: <ShieldIcon />, title: 'Guardian craft', desc: 'The Kangal protects the flock. We protect the things that matter: the player’s time, trust and joy.' },
   { icon: <FlameIcon />, title: 'Bold by default', desc: 'We chase ideas worth making, not safe ones. Distinct art directions, honest mechanics, real stakes.' },
-  { icon: <GemIcon />, title: 'Polish obsessed', desc: 'Feel first. A jump, a tap, a transition — if it doesn’t feel right, it isn’t done.' },
+  { icon: <GemIcon />, title: 'Polish obsessed', desc: 'Feel first. A jump, a tap, a transition. If it doesn’t feel right, it isn’t done.' },
   { icon: <HeartIcon />, title: 'Player-first, always', desc: 'No dark patterns, no manipulative loops. Games that respect the people who play them.' },
 ]
 
 const ROADMAP = [
-  { n: '01', when: '2026', title: 'The studio is founded', desc: 'Kangal Games is born — an independent studio inspired by the loyal, fearless Anatolian Kangal.', active: true },
+  { n: '01', when: '2026', title: 'The studio is founded', desc: 'Kangal Games is born. An independent studio inspired by the loyal, fearless Anatolian Kangal.', active: true },
   { n: '02', when: 'In progress', title: 'First mobile title in development', desc: 'Our debut game is taking shape: a mobile-first experience built to prove our craft and our feel.', active: true },
   { n: '03', when: 'Next', title: 'Growing the pack', desc: 'Bringing on artists, engineers and designers who share the obsession with quality.' },
   { n: '04', when: 'Beyond', title: 'AA and, one day, AAA', desc: 'Scaling from focused AA releases toward original, large-scale worlds of our own.' },
