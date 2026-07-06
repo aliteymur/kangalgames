@@ -507,7 +507,12 @@ body.game-body { overflow: hidden; overscroll-behavior: none; }
 }
 .g-note { color: var(--ink-faint); font-size: 13.5px; text-align: center; margin: 0; }
 
-@media (max-width: 560px) {
+@media (max-width: 640px) {
+  /* Portrait phones: 16/9 is too short and clips the start card. */
+  .game-frame:not(.game-frame--full) { aspect-ratio: 3 / 4; }
+  .g-overlay { overflow-y: auto; }
+  .g-card { padding: 8px 4px; }
+  .g-desc, .g-score-line { font-size: 14px; }
   .g-hp { width: 140px; height: 20px; }
   .g-score { font-size: 20px; }
   .g-bark { width: 66px; height: 66px; font-size: 11px; }
