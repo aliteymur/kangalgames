@@ -1,4 +1,8 @@
-# 🐺 Kangal Games — Website
+<p align="center">
+  <img src="public/logo.png" alt="Kangal Games" width="480">
+</p>
+
+# Kangal Games — Website
 
 The official website for **Kangal Games**, an independent game studio building
 bold, high-craft games — mobile-first, with AA and (one day) AAA ambitions.
