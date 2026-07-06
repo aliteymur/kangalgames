@@ -222,7 +222,7 @@ export default function GuardianGame({ standalone = false }) {
           </div>
         )}
       </div>
-      {!standalone && <p className="g-note">A tiny in-browser tech demo — a taste of the feel we care about.</p>}
+      {!standalone && <p className="g-note">A tiny in-browser tech demo. A taste of the feel we care about.</p>}
     </div>
   )
 }
