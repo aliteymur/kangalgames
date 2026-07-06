@@ -20,10 +20,10 @@
   },
   "devDependencies": {
     "@capacitor/android": "^6.2.0",
-    "@capacitor/cli": "^8.4.1",
+    "@capacitor/cli": "^6.2.0",
     "@capacitor/core": "^6.2.0",
     "@capacitor/ios": "^6.2.0",
-    "@vitejs/plugin-react": "^4.3.4",
+    "@vitejs/plugin-react": "^6.0.3",
     "vite": "^8.1.3"
   }
 }
