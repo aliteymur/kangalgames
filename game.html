@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <meta name="description" content="Kangal: Night Watch — a playable demo by Kangal Games." />
+    <meta name="description" content="Operation Iron Eagle — a playable tactics demo by Kangal Games." />
 
     <!-- PWA / installable -->
     <link rel="manifest" href="./manifest.webmanifest" />
@@ -12,20 +12,16 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="Kangal Watch" />
+    <meta name="apple-mobile-web-app-title" content="Iron Eagle" />
     <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
 
-    <title>Kangal: Night Watch</title>
+    <title>Operation Iron Eagle</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <!-- open the Demir Kartal demo straight away -->
+    <meta http-equiv="refresh" content="0; url=./demos/demir-kartal/index.html" />
+    <script>location.replace('./demos/demir-kartal/index.html');</script>
   </head>
-  <body class="game-body">
-    <div id="root"></div>
-    <script type="module" src="/src/game-main.jsx"></script>
+  <body style="margin:0;background:#0b0b0d;color:#e6e3cc;font-family:sans-serif;display:grid;place-items:center;height:100vh">
+    <a href="./demos/demir-kartal/index.html" style="color:#e3a63c">Operation Iron Eagle yükleniyor…</a>
   </body>
 </html>

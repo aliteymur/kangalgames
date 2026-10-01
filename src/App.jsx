@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { KangalEmblem, Wordmark, LogoLockup } from './Logo.jsx'
 import GuardianGame from './GuardianGame.jsx'
 import useReveal from './useReveal.js'
+import DemoPlayer from './components/DemoPlayer';
 
 const FOCUS = [
   {
@@ -180,19 +181,24 @@ export default function App() {
         </section>
 
         {/* DEMO GAME */}
-        <section id="demo" className="section">
+      <section id="demo" className="section">
           <div className="container">
             <div className="reveal">
               <span className="eyebrow">Playable demo</span>
               <h2 className="section-title">Feel it, don’t just read it.</h2>
               <p className="section-lead">
-                A tiny browser tech demo: no download, no sign-up. Guard the
-                moonlit steppe as the Kangal and hold back the wolves. It’s a
-                small taste of the game feel we obsess over.
+                Operation Iron Eagle: a real-time tactics demo right in your
+                browser, with no download and no sign-up. Lead a Green Beret,
+                a sniper and a spy behind enemy lines, slip past patrols,
+                take out the officer and reach extraction unseen.
               </p>
             </div>
             <div className="reveal d1" style={{ marginTop: 40 }}>
-              <GuardianGame />
+              <DemoPlayer
+                src="/demos/demir-kartal/index.html"
+                poster="/demos/demir-kartal/cover.jpg"
+                title="Operation Iron Eagle"
+              />
             </div>
           </div>
         </section>

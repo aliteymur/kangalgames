@@ -1,7 +1,7 @@
 {
-  "name": "Kangal: Night Watch",
-  "short_name": "Kangal Watch",
-  "description": "Guard the moonlit steppe as the Kangal — a demo by Kangal Games.",
+  "name": "Operation Iron Eagle — Kangal Games",
+  "short_name": "Iron Eagle",
+  "description": "Lead a Green Beret, a sniper and a spy behind enemy lines — a tactics demo by Kangal Games.",
   "start_url": "./game.html",
   "scope": "./",
   "display": "standalone",
