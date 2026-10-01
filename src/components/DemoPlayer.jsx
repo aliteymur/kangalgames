@@ -14,11 +14,17 @@ export default function DemoPlayer({
   const frameRef = useRef(null);
 
   const start = () => setPlaying(true);
-  const fullscreen = () => {
+   const fullscreen = () => {
     const el = frameRef.current;
     if (!el) return;
-    (el.requestFullscreen || el.webkitRequestFullscreen)?.call(el);
-    el.focus();
+    const canFullscreen = document.fullscreenEnabled || document.webkitFullscreenEnabled;
+    if (canFullscreen) {
+      (el.requestFullscreen || el.webkitRequestFullscreen).call(el);
+      el.focus();
+    } else {
+      // iPhone: Safari can't fullscreen a page, so open the game on its own page instead
+      window.location.href = '/game.html';
+    }
   };
 
   return (
